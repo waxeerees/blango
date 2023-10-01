@@ -25,3 +25,4 @@ class Post(models.Model):
 
 class PostAdmin(admin.ModelAdmin):
   prepopulated_fields = {"slug": ("title",)}
+  list_display = ('slug', 'published_at')
